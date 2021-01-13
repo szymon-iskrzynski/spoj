@@ -17,6 +17,10 @@ class MainTest {
         return Stream.of(
                 arguments("OPSS", "OPSS"),
                 arguments("ABCDEF", "ABCDEF"),
+                arguments("ABA", "ABA"),
+                arguments("A", "A"),
+                arguments("AABB", "AABB"),
+                arguments("AABBCCDDDD", "AABBCCD4"),
                 arguments("ABBCCCDDDDEEEEEFGGHIIJKKKL", "ABBC3D4E5FGGHIIJK3L"),
                 arguments("AAAAAAAAAABBBBBBBBBBBBBBBB", "A10B16")
         );
